@@ -3,6 +3,16 @@ console.log("strains");
 const searchParams = new URLSearchParams(window.location.search);
 
 const search = searchParams.get("search");
+
+setTimeout(
+  ((goToStrainsPage = () => {
+    window.location.replace(
+      "https://herbalstrains.firebaseapp.com/strains.html"
+    );
+  }),
+  1000)
+);
+
 console.log(search);
 // fetch(`http://localhost:3000/strains?search=${search}`)
 fetch(`https://herbalstrains.herokuapp.com/strains?search=${search}`)
