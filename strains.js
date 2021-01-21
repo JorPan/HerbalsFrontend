@@ -1,11 +1,8 @@
 console.log("strains");
 
 const searchParams = new URLSearchParams(window.location.search);
-
 const search = searchParams.get("search");
 
-console.log(search);
-// fetch(`http://localhost:3000/strains?search=${search}`)
 fetch(`https://herbalstrains.herokuapp.com/strains?search=${search}`)
   .then((response) => response.json())
   .then((strains) => {
