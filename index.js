@@ -5,7 +5,7 @@ const search = searchParams.get("search");
 let positiveEffects = [];
 let medicalEffects = [];
 let negativeEffects = [];
-let effectsURL = `http://strainapi.evanbusse.com/${APIKey}/searchdata/effects`;
+let effectsURL = `https://strainapi.evanbusse.com/${APIKey}/searchdata/effects`;
 
 // if (search) {
 //   effectsurl = `http://localhost:3001/strains?search=${search}`;
